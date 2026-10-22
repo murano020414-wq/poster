@@ -1,0 +1,19 @@
+ @use "../utils" as u;
+ .btn {
+     background-color: transparent;
+     border: none;
+     border-radius: 999px;
+     padding-inline: 15px;
+     padding-block: 14px;
+     font-size: 15px;
+     font-weight: 600;
+     color: u.$color;
+ }
+  button:hover {
+      transform: scale(1.09);
+      transition: transform 200ms ease-in-out;
+  }
+  .btn:hover {
+      transform: scale(1.09);
+      transition: transform 200ms ease-in-out;
+  }

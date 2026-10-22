@@ -1,0 +1,20 @@
+  @use "../utils" as u;
+  
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      font-family: 'Manrope', sans-serif;
+      background: radial-gradient(circle at top,
+              #1b1b1b 0%,
+              #0d0d0d 55%,
+              #090909 100%);
+      color:  u.$color;
+      line-height: 1.6;
+  }
+
+  .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: auto;
+  }

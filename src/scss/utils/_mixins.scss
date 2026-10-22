@@ -1,0 +1,23 @@
+@use "./variables" as v;
+@mixin tag($y,$x,$bg) {
+    padding: $y $x;
+    border-radius: 9999px;
+    color: #d4b36b;
+    background-color: $bg;
+}
+@mixin media-min($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: v.$breakpoint-tablet) {
+            @content;
+        }
+}
+@mixin laptop {
+    @media screen and (min-width: v.$breakpoint-laptop) {
+        @content;
+    }
+}
